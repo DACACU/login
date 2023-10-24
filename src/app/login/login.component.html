@@ -1,16 +1,17 @@
 <div class="login">
-    <form class="custom-form" action="post">
+    <form class="custom-form form-control" action="post">
         <h1>LOGIN</h1>
-        <input type="email"
+        <input class="form-control" type="email"
         [(ngModel)]="email"
         name="email"
         placeholder="email"
         required="required">
-        <input type="password"
+        <input class="form-control" type="password"
         [(ngModel)]="password"
         name="password"
         placeholder="password"
-        required="required">
+        required="required"
+        minlength="6">
         <button type="submit" (click)="login()">Login</button>
     </form>
 
